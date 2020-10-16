@@ -27,7 +27,7 @@ the [devglan online bcrypt hash generator](https://www.devglan.com/online-tools/
 to create the encrypted version of the password.
 
 The default username and password are are:
- - username: `erugh
+ - username: `erugh`
  - password: `dontflop`
 
 To create the authorization header token, use the following command to generate the token:
@@ -40,11 +40,10 @@ Thus, for the defaults, you would get the token `ZXVyZ2g6ZG9udGZsb3A=` from:
 echo -n "eurgh:dontflop" | base64
 ```
 
-```
-
 ## Example
 
 Example using the default username and password token (lists all current Rappers):
+
 ```
 curl --request GET --header "Authorization: Basic ZXVyZ2g6ZG9udGZsb3A=" http://bigbird.ornl.gov:8080/rappers
 ```
